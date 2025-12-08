@@ -70,7 +70,6 @@ def main():
     mlflow.set_tracking_uri("sqlite:///mlflow.db")
     _log_test_run()
 
-
 def _log_test_run():
     """Log a test run to MLflow for connectivity verification."""
     with mlflow.start_run():

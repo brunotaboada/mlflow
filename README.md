@@ -1,4 +1,4 @@
-# MLflow + prompt for vibe coding software development process.
+# MLflow + promptings for vibe coding software development process.
 
 The idea of this template is to help developers to understand and implement the vibe coding software development process in their team. This comes with a open source AI-powered agent named kilo and some pre-defined agents, rules and md templates. It also comes with the mlflow prompt manager to help you manage and optimize your prompts and md templates.
 

@@ -1,6 +1,6 @@
 # MLflow + promptings for vibe coding software development process.
 
-The idea of this template is to help developers to understand and implement the vibe coding software development process in their team. This comes with a open source AI-powered agent named kilo and some pre-defined agents, rules and md templates. It also comes with the mlflow prompt manager to help you manage and optimize your prompts and md templates.
+The idea of this template is to help those interested to understand and implement the vibe coding software development process in their team. This comes with a open source AI-powered agent named kilo and some pre-defined agents, rules and md templates. It also comes with the mlflow prompt manager to help you manage and optimize your prompts and md templates.
 
 ## 📋 Overview
 
@@ -49,17 +49,21 @@ source .venv/bin/activate  # Linux/Mac
 ## 📁 Project Structure
 
 ```
-mlflow-prompt-manager/
+mlflow/
+├── .gitignore                # Git ignore rules
 ├── .kilocode/                # Configuration and rules
+├── .kilocodemodes            # Mode configurations
+├── .venv/                    # Python virtual environment
+├── .vscode/                  # VSCode configuration
 ├── instructions/             # Instruction templates
 │   ├── arquitect.md          # Architecture instructions
 │   ├── create_tasks.md       # Task creation instructions
 │   └── tech_spec.md          # Technical specification template
 ├── templates/                # Document templates
-│   ├── plan_template.md      # Project planning template
+│   ├── plan-template.md      # Project planning template
+│   ├── task-template.md      # Task management template
 │   ├── tasks-template.md     # Task management template
 │   └── techspec-template.md  # Technical specification template
-├── mlflow.db                 # SQLite database for MLflow tracking
 ├── optimize_mlflow.py        # Prompt optimization script
 ├── register_mds.py           # Main prompt registration script
 ├── requirements.txt          # Python dependencies
@@ -144,7 +148,7 @@ The system tracks:
 
 ### Prompt Engineering
 - [Prompt Engineering Guide](https://learnprompting.org/)
-- [MLflow Prompt Optimization](https://mlflow.org/docs/latest/genai/prompt-optimization.html)
+- [MLflow Prompt Optimization](https://mlflow.org/docs/3.2.0/genai/prompt-registry/optimize-prompts/)
 
 ## 🤝 Contributing
 

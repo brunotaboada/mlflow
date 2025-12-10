@@ -1,126 +1,126 @@
-# Template de Especificação Técnica
+# Technical Specification Template
 
-## Resumo Executivo
+## Executive Summary
 
-[Forneça uma breve visão técnica da abordagem de solução. Resuma as decisões arquiteturais principais e a estratégia de implementação em 1-2 parágrafos.]
+[Provide a brief technical overview of the solution approach. Summarize the main architectural decisions and implementation strategy in 1-2 paragraphs.]
 
-## Arquitetura do Sistema
+## System Architecture
 
-### Visão Geral dos Componentes
+### Component Overview
 
-[Breve descrição dos componentes principais e suas responsabilidades:
+[Brief description of main components and their responsibilities:
 
-- Nomes dos componentes e funções primárias
-- Relacionamentos principais entre componentes
-- Visão geral do fluxo de dados]
+- Component names and primary functions
+- Main relationships between components
+- Data flow overview]
 
-## Design de Implementação
+## Implementation Design
 
-### Interfaces Principais
+### Main Interfaces
 
-[Defina interfaces de serviço principais (≤20 linhas por exemplo):
+[Define main service interfaces (≤20 lines per example):
 
 ```python
-# Exemplo de definição de interface
+# Interface definition example
 from abc import ABC, abstractmethod
 from typing import Any
 
-class NomeServico(ABC):
+class ServiceName(ABC):
     @abstractmethod
-    def nome_metodo(self, ctx: Any, entrada: Tipo) -> Tipo:
+    def method_name(self, ctx: Any, input: Type) -> Type:
         pass
 ```
 ]
 
-### Modelos de Dados
+### Data Models
 
-[Defina estruturas de dados essenciais:
+[Define essential data structures:
 
-- Entidades de domínio principais (se aplicável)
-- Tipos de requisição/resposta
-- Esquemas de banco de dados (se aplicável)]
+- Main domain entities (if applicable)
+- Request/response types
+- Database schemas (if applicable)]
 
-### Endpoints de API
+### API Endpoints
 
-[Liste endpoints de API se aplicável:
+[List API endpoints if applicable:
 
-- Método e caminho (ex: `POST /api/v0/recurso`)
-- Breve descrição
-- Referências de formato requisição/resposta]
+- Method and path (e.g., `POST /api/v0/resource`)
+- Brief description
+- Request/response format references]
 
-## Pontos de Integração
+## Integration Points
 
-[Inclua apenas se a funcionalidade requer integrações externas:
+[Include only if the feature requires external integrations:
 
-- Serviços ou APIs externos
-- Requisitos de autenticação
-- Abordagem de tratamento de erros]
+- External services or APIs
+- Authentication requirements
+- Error handling approach]
 
-## Abordagem de Testes
+## Testing Approach
 
-### Testes Unitários
+### Unit Tests
 
-[Descreva estratégia de testes unitários:
+[Describe unit testing strategy:
 
-- Componentes principais a testar
-- Requisitos de mock (apenas serviços externos)
-- Cenários de teste críticos]
+- Main components to test
+- Mock requirements (external services only)
+- Critical test scenarios]
 
-### Testes de Integração
+### Integration Tests
 
-[Se necessário, descreva testes de integração:
+[If needed, describe integration tests:
 
-- Componentes a testar juntos
-- Requisitos de dados de teste]
+- Components to test together
+- Test data requirements]
 
-## Sequenciamento de Desenvolvimento
+## Development Sequencing
 
-### Ordem de Construção
+### Build Order
 
-[Defina sequência de implementação:
+[Define implementation sequence:
 
-1. Primeiro componente/funcionalidade (por que primeiro)
-2. Segundo componente/funcionalidade (dependências)
-3. Componentes subsequentes
-4. Integração e testes]
+1. First component/feature (why first)
+2. Second component/feature (dependencies)
+3. Subsequent components
+4. Integration and testing]
 
-### Dependências Técnicas
+### Technical Dependencies
 
-[Liste quaisquer dependências bloqueantes:
+[List any blocking dependencies:
 
-- Infraestrutura requerida
-- Disponibilidade de serviço externo]
+- Required infrastructure
+- External service availability]
 
-## Monitoramento e Observabilidade
+## Monitoring and Observability
 
-[Defina abordagem de monitoramento usando infraestrutura existente:
+[Define monitoring approach using existing infrastructure:
 
-- Métricas a expor (formato Prometheus)
-- Logs principais e níveis de log
-- Integração com dashboards Grafana existentes
+- Metrics to expose (Prometheus format)
+- Main logs and log levels
+- Integration with existing Grafana dashboards]
 
-## Considerações Técnicas
+## Technical Considerations
 
-### Decisões Principais
+### Key Decisions
 
-[Documente decisões técnicas importantes:
+[Document important technical decisions:
 
-- Escolha de abordagem e justificativa
-- Trade-offs considerados
-- Alternativas rejeitadas e por quê]
+- Approach choice and justification
+- Trade-offs considered
+- Rejected alternatives and why]
 
-### Riscos Conhecidos
+### Known Risks
 
-[Identifique riscos técnicos:
+[Identify technical risks:
 
-- Desafios potenciais
-- Abordagens de mitigação
-- Áreas precisando pesquisa]
+- Potential challenges
+- Mitigation approaches
+- Areas needing research]
 
-### Conformidade com Padrões
+### Standards Compliance
 
-[Pesquisa as rules na pasta @kilocode/rules que se encaixam nesta techspec e liste-as abaixo:]
+[Research the rules in the @kilocode/rules folder that fit this techspec and list them below:]
 
-### Arquivos relevantes
+### Relevant Files
 
-[Liste aqui arquivos relevantes]
+[List relevant files here]

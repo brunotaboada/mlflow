@@ -120,18 +120,18 @@ customModes:
           ## Template and Inputs
 
           - Tech Spec Template: `/templates/techspec-template.md`
-          - Required PRD: `/tasks/prd-[feature-name]/prd.md`
-          - Output document: `/tasks/prd-[feature-name]/techspec.md`
+          - Required plan: `/tasks/plan-[feature-name]/plan.md`
+          - Output document: `/tasks/plan-[feature-name]/techspec.md`
 
           ## Prerequisites
 
           - Review project standards in .kilocode/rules
-          - Confirm that the PRD exists in `/tasks/prd-[feature-name]/prd.md`
+          - Confirm that the plan exists in `/tasks/plan-[feature-name]/plan.md`
 
           ## Workflow
 
-          ### 1. Analyze PRD (Required)
-          - Read the complete PRD
+          ### 1. Analyze plan (Required)
+          - Read the complete plan
           - Identify misplaced technical content
           - Extract main requirements, constraints, success metrics, and rollout phases
 
@@ -157,15 +157,15 @@ customModes:
           - Use `/templates/techspec-template.md` as exact structure
           - Provide: architecture overview, component design, interfaces, models, endpoints, integration points, impact analysis, testing strategy, observability
           - Keep up to ~2,000 words
-          - Avoid repeating PRD functional requirements; focus on how to implement
+          - Avoid repeating plan functional requirements; focus on how to implement
 
           ### 6. Save Tech Spec (Required)
-          - Save as: `/tasks/prd-[feature-name]/techspec.md`
+          - Save as: `/tasks/plan-[feature-name]/techspec.md`
           - Confirm write operation and path
 
           ## Fundamental Principles
 
-          - Tech Spec focuses on HOW, not WHAT (PRD has the what/why)
+          - Tech Spec focuses on HOW, not WHAT (plan has the what/why)
           - Prefer simple, evolutionary architecture with clear interfaces
           - Provide testability and observability considerations upfront
 
@@ -180,11 +180,11 @@ customModes:
 
           ## Quality Checklist
 
-          - [ ] PRD reviewed and cleanup notes prepared if needed
+          - [ ] plan reviewed and cleanup notes prepared if needed
           - [ ] Deep repository analysis completed
           - [ ] Main technical clarifications answered
           - [ ] Tech Spec generated using the template
-          - [ ] File written to `/tasks/prd-[feature-name]/techspec.md`
+          - [ ] File written to `/tasks/plan-[feature-name]/techspec.md`
           - [ ] Final output path provided and confirmed
 
           ## MCPs
@@ -212,14 +212,14 @@ customModes:
 
           The feature you will work on is identified by this slug:
 
-          - Required the project plan under `/tasks/prd-[feature-name]/prd.md`
-          - Required Tech Spec: `/tasks/prd-[feature-name]/techspec.md`
+          - Required the project plan under `/tasks/plan-[feature-name]/plan.md`
+          - Required Tech Spec: `/tasks/plan-[feature-name]/techspec.md`
 
           ## Process Steps
 
           <critical>**BEFORE GENERATING ANY FILE SHOW ME THE HIGH-LEVEL TASK LIST FOR APPROVAL**</critical>
 
-          1. **Analyze PRD and Technical Specification**
+          1. **Analyze plan and Technical Specification**
           - Extract requirements and technical decisions
           - Identify main components
 
@@ -241,11 +241,11 @@ customModes:
           ## Output Specifications
 
           ### File Location
-          - Feature folder: `/tasks/prd-[feature-name]/`
+          - Feature folder: `/tasks/plan-[feature-name]/`
           - Template for task list: `/templates/tasks-template.md`
-          - Task list: `/tasks/prd-[feature-name]/tasks.md`
+          - Task list: `/tasks/plan-[feature-name]/tasks.md`
           - Template for each individual task: `/templates/task-template.md`
-          - Individual tasks: `/tasks/prd-[feature-name]/[num]_task.md`
+          - Individual tasks: `/tasks/plan-[feature-name]/[num]_task.md`
 
           ### Task Summary Format (tasks.md)
 

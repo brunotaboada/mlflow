@@ -1,0 +1,1 @@
+{"mcpServers":{"postgres-query":{"command":"c:/Users/leida/AI_Projects/mlflow/.venv/Scripts/python.exe","args":["c:/Users/leida/AI_Projects/mlflow/mcp-servers/postgres-query-server/server.py"],"env":{"DATABASE_URL":"postgresql://user:pass@localhost:5432/mydb","MAX_ROWS":"1000"},"disabled":false,"alwaysAllow":["execute_query"],"disabledTools":[]}}}
